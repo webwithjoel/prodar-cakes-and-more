@@ -1,0 +1,40 @@
+export const business = {
+  name: "Prodar's Cakes and More",
+  shortName: "Prodar's",
+  instagramHeadline: 'PRODAR || baker in Osogbo',
+  tagline: 'Cakes, pastries & sweet surprises, made fresh in Osogbo.',
+  location: 'Osogbo, Osun State, Nigeria',
+  address: 'No. 6 Akanke Salau Street, Eleyele Estate, Ogoluwa, Osogbo, Osun State',
+  phones: [
+    { display: '08065920852', href: 'tel:+2348065920852' },
+    { display: '09057360505', href: 'tel:+2349057360505' },
+  ],
+  whatsappNumber: '2348065920852',
+  whatsappInviteLink: 'https://wa.me/message/MEL3ANY32FASG1',
+  email: 'lasisioluwadarasimi@gmail.com',
+  instagram: {
+    handle: '@prodars_cakes_and_more',
+    url: 'https://instagram.com/prodars_cakes_and_more',
+    followers: 916,
+    posts: 179,
+  },
+  hours: 'Mon–Sat',
+  preOrderNotice: 'Order at least 24 hours before you need it.',
+  owner: {
+    name: null,
+    title: 'CEO & Head Baker',
+  },
+  registration: {
+    number: '7630554',
+    registeredOn: '28 June 2024',
+  },
+  services: [
+    'Cakes for all occasions',
+    'Pastries',
+    'Parfait',
+    'Surprise packages',
+    'Balloon decorations',
+    'Catering',
+    'Training',
+  ],
+}
