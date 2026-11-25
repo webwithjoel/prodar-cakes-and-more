@@ -1,7 +1,7 @@
-import { BadgeCheck, Clock3, Instagram, CalendarDays } from 'lucide-react'
+import { BadgeCheck, Camera, Clock3, CalendarDays } from 'lucide-react'
 import { content } from '../../data/content.js'
 
-const icons = [BadgeCheck, CalendarDays, Clock3, Instagram]
+const icons = [BadgeCheck, CalendarDays, Clock3, Camera]
 
 export default function StatStrip() {
   return (

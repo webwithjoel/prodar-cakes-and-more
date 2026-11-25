@@ -1,4 +1,4 @@
-import { Instagram, Mail, MapPin, MessageCircle, Phone } from 'lucide-react'
+import { Camera, Mail, MapPin, MessageCircle, Phone } from 'lucide-react'
 import { business } from '../../data/business.js'
 import { content } from '../../data/content.js'
 import { whatsappUrl } from '../../utils/whatsapp.js'
@@ -38,7 +38,7 @@ export default function Footer() {
           <p className="text-sm text-white/90">{business.hours}</p>
           <p className="mt-1 text-sm leading-6 text-white/75">{business.preOrderNotice}</p>
           <a className="mt-4 flex min-h-10 items-center gap-3 text-sm text-white/90 hover:text-pink" href={business.instagram.url} target="_blank" rel="noreferrer">
-            <Instagram className="text-pink" aria-hidden="true" size={18} />
+            <Camera className="text-pink" aria-hidden="true" size={18} />
             {business.instagram.handle}
           </a>
           <a className="mt-1 flex min-h-10 items-center gap-3 break-all text-sm text-white/90 hover:text-pink" href={`mailto:${business.email}`}>

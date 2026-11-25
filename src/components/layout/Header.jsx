@@ -3,9 +3,11 @@ import { Menu, ShoppingBag } from 'lucide-react'
 import { useCart } from '../../context/CartContext.jsx'
 import { content } from '../../data/content.js'
 import MobileMenu from './MobileMenu.jsx'
+import CartDrawer from '../cart/CartDrawer.jsx'
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
+  const [cartOpen, setCartOpen] = useState(false)
   const { count } = useCart()
 
   return (
@@ -20,6 +22,7 @@ export default function Header() {
               className="relative grid size-11 place-items-center rounded-full text-plum transition hover:bg-pink-soft"
               type="button"
               aria-label={`${content.navigation.cart}${count ? `, ${count} items` : ''}`}
+              onClick={() => setCartOpen(true)}
             >
               <ShoppingBag aria-hidden="true" size={22} />
               {count > 0 && (
@@ -42,6 +45,7 @@ export default function Header() {
         </div>
       </header>
       <MobileMenu open={menuOpen} onClose={() => setMenuOpen(false)} />
+      <CartDrawer open={cartOpen} onClose={() => setCartOpen(false)} />
     </>
   )
 }

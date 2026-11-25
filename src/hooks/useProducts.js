@@ -5,7 +5,10 @@ import { getCategories, getProducts } from '../services/productService.js'
 
 export function useProducts({ categorySlug, featuredOnly = false } = {}) {
   const [products, setProducts] = useState(() =>
-    localProducts.filter((product) => product.is_active),
+    localProducts
+      .filter((product) => product.is_active)
+      .filter((product) => !categorySlug || product.category_slug === categorySlug)
+      .filter((product) => !featuredOnly || product.is_featured),
   )
   const [categories, setCategories] = useState(() =>
     localCategories.filter((category) => category.is_active),

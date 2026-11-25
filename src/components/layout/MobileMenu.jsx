@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { ArrowUpRight, Instagram, MessageCircle, X } from 'lucide-react'
+import { ArrowUpRight, Camera, MessageCircle, X } from 'lucide-react'
 import { business } from '../../data/business.js'
 import { content } from '../../data/content.js'
 import { whatsappUrl } from '../../utils/whatsapp.js'
@@ -74,7 +74,7 @@ export default function MobileMenu({ open, onClose }) {
             rel="noreferrer"
             onClick={onClose}
           >
-            <Instagram aria-hidden="true" size={18} />
+            <Camera aria-hidden="true" size={18} />
             {content.navigation.instagram}
           </a>
         </div>
